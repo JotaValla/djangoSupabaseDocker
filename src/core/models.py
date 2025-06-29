@@ -7,3 +7,9 @@ class Local(models.Model):                  # the class where your local data is
     name = models.CharField(max_length=50)
     data = models.JSONField()
     
+class Jimbo(models.Model):                  # the class where your local data is saved
+    _DATABASE = 'default'
+
+    name = models.CharField(max_length=50)
+    data = models.JSONField() 
+    
